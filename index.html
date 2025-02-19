@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Recommendation Prompter</title>
+
+  <!-- Basic Meta Tags -->
+  <meta name="description" content="Anime Recommendation Prompter helps anime fans generate a structured markdown prompt from their MyAnimeList export file. Use the prompt in any large language model to get personalized anime recommendations based on your watch history and ratings.">
+  <meta name="keywords" content="anime, recommendation, prompt generator, MyAnimeList, MAL export, markdown prompt, large language model, anime recommendations">
+  <meta name="author" content="Levent Özgür">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://anime-recommendation-prompter.github.io/">
+
+  <!-- Structured Data for SEO (Schema.org) -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Anime Recommendation Prompter",
+      "url": "https://anime-recommendation-prompter.github.io/",
+      "description": "Anime Recommendation Prompter converts your MyAnimeList export into a markdown prompt ready for any large language model, delivering personalized anime recommendations based on your watch history."
+    }
+  </script>
+  
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Anime Recommendation Prompter</h1>
+    <p>
+      This website helps anime fans generate a structured markdown prompt from their MyAnimeList (MAL) export file.
+      By analyzing completed anime and ratings, it formats the data into a ready-to-use prompt for any preferred large language model (LLM).
+      You can then input this prompt into your chosen AI to receive personalized anime recommendations based on your watch history and preferences.
+      Simple, efficient, and designed for discovering new anime effortlessly!
+    </p>
+    <p>⇨ <a href="https://myanimelist.net/panel.php?go=export" target="_blank">Export Your List</a> ⇦</p>
+    <input type="file" id="fileInput" accept=".xml" />
+    <button id="convertBtn">Convert to Markdown</button>    
+    <textarea id="output" readonly placeholder="Markdown output will appear here..."></textarea>
+    <button id="copyBtn">Copy Prompt</button>
+  </div>
+  <footer id="footer">
+    <a href="https://anime-recommendation-prompter.github.io/">Anime Recommendation Prompter</a> by 
+    <a href="https://github.com/levent1ozgur" target="_blank">Levent Özgür</a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
